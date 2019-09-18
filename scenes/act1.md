@@ -6,9 +6,9 @@ SceneSetup.act1();
 
 (...300)
 
-n: AND THIS IS THE HUMAN'S ANXIETY
+n: ESTA ES LA ANSIEDAD DEL HUMANO
 
-n: _YOU_ ARE THE ANXIETY
+n: _TU_ERES ESA ANSIEDAD
 
 {{if window.localStorage.continueChapter=="replay"}}
 (#act1_replay)
@@ -24,17 +24,17 @@ n: _YOU_ ARE THE ANXIETY
 
 `hong({mouth:"0_neutral", eyes:"0_neutral"})`
 
-h: Oh hey! We're back here again?
+h: Oh hey!, Estamos aqui de nuevo?
 
 `hong({eyes:"0_neutral"})`
 
-n: YOUR JOB IS TO PROTECT YOUR HUMAN FROM *DANGER*
+n: TU TRABAJO ES PROTEJER AL HUMANO DEL *PELIGRO* 
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
-n: IN FACT, REPLAYING THIS GAME IS PUTTING THEM IN *DANGER* RIGHT NOW
+n: DE HECHO, RE-JUGAR ESTO ESTA PONIENDO EN *PELIGRO* AL HUMANO AHORA MISMO
 
-n: QUICK, WARN THEM!
+n: RAPIDO, ADVIETELE!
 
 ```
 sfx("squeak");
@@ -42,13 +42,13 @@ bb({body:"squeeze_talk"});
 hong({body:"0_squeeze"});
 ```
 
-b: Human! Listen, we're in danger! The player...
+b: Humano!, Escucha, estamos en peligro!, El jugador...
 
-[...is gonna torture us again!](#act1_replay_torture)
+[...va a torturarnos otra vez!](#act1_replay_torture)
 
-[...won't find an alternate ending!](#act1_replay_alternate)
+[...no encontrara un final alternativo!](#act1_replay_alternate)
 
-[...will get ludonarrative dissonance!](#act1_replay_dissonance)
+[...le va a dar disonancia ludonarrativa!](#act1_replay_dissonance)
 
 # act1_replay_torture
 
@@ -59,32 +59,32 @@ hong({body:"0_sammich"});
 ```
 
 {{if window.HACK_REPLAY.act1_ending=="fight"}}
-b: They'll make us curl up into a ball and cry!
+b: Nos hara hacernos bolita y llorar!
 {{/if}}
 
 {{if window.HACK_REPLAY.act1_ending=="flight"}}
-b: They'll make us kill your phone for giving you a panic attack!
+b: Nos hara destruir tu telefono por darnos un ataque de panico!
 {{/if}}
 
 {{if window.HACK_REPLAY.a2_ending=="fight"}}
-b: They'll make us *NOT* punch the party host!
+b: Nos hara *NO* golpear al anfitrion de la fiesta!
 {{/if}}
 
 {{if window.HACK_REPLAY.a2_ending=="flight"}}
-b: They'll make us punch the Sympathetic Anti-Villain party host!
+b: Nos hara golpear al Simpatico anfitrion Anti-Villano!
 {{/if}}
 
 {{if window.HACK_REPLAY.a3_ending=="jump"}}
-h: Well at least we might not jump off the roof this ti--
+h: Bueno al menos quiza no saltaremos del techo esta ve--
 {{/if}}
 
 {{if window.HACK_REPLAY.a3_ending=="walkaway"}}
-b: THEY'LL MAKE US JUMP OFF THE ROOF.
+b: EL NOS HARA SALTAR DEL TECHO.
 {{/if}}
 
 `bb({body:"fear"});`
 
-b: ALL THESE NEW TERRIBLE THINGS WILL HAPPEN TO US, AND THEN WE'LL--
+b: TODAS ESTAS COSAS NUEVAS TERRIBLES NOS PASARAN Y LUEGO--
 
 (#act1_replay_end)
 
@@ -96,11 +96,11 @@ bb({body:"normal", mouth:"normal", eyes:"fear"});
 hong({body:"0_sammich"});
 ```
 
-h: Sure, the story as a *whole* is the same, but each chapter has two possible endings, plus all the branching dialogue opti--
+h: Claro, la historia completa es la misma pero cada capitulo tiene dos finales posibles, adenas de mas opciones de dialo--
 
 `bb({body:"fear"});`
 
-b: The player will be disappointed, close this browser tab, delete our software, and then we'll--
+b: El jugador estara decepcionado, cerrara esta pestaña, eliminar nuestro software, y lue--
 
 (#act1_replay_end)
 
@@ -112,27 +112,27 @@ bb({body:"normal", mouth:"normal", eyes:"fear"});
 hong({body:"0_sammich"});
 ```
 
-h: A lewd-what now?
+h: Un lewd- que?
 
 `bb({eyes:"normal"});`
 
-b: The story arc was about how you can *CHOOSE* to build a healthy collaboration with your fear,
+b: La historia toma giro en lo que ESCOGAS para construir una sana collaboracion con tu miedo
 
 `bb({eyes:"normal_right"});`
 
-b: But replaying the game will give the same story, implying your *CHOICES* don't matter,
+b: Pero jugando al juego te dara la mismo historia, implicando que tus DECICIONES no importan
 
 `bb({eyes:"narrow_eyebrow"});`
 
-b: Thus showing a contradiction between the game's message and mechanics,
+b: Haci mostrando una contradiccion entre el mensaje del juego y las mecanicas,
 
 `bb({eyes:"fear"});`
 
-b: Thus unraveling the fabric of this narrative universe,
+b: Haci deshaciendo la tela de este universo narrativo,
 
 `bb({body:"fear"});`
 
-b: And then we'll--
+b: Y luego nosotros--
 
 (#act1_replay_end)
 
@@ -141,7 +141,7 @@ b: And then we'll--
 
 `bb({body:"panic"})`
 
-b: DIEEEEEEEEEEEEEEEEEEE
+b: MORIIIIREEEMOOOOS
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"normal"});
@@ -164,13 +164,13 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 hong({body:"0_sammich"});
 ```
 
-h: Okay let's get back into character.
+h: Okay, volvamos al personaje
 
 ```
 Game.clearText();
 ```
 
-n4: (LET _YOUR_ ANXIETY BLAH BLAH BLAH MOST SIMILAR TO WHAT _YOUR_ FEAR BLAH BLAH YOU KNOW THE DRILL)
+n4: (DEJA QUE_TU_ANSIEDAD BLAH BLAH BLAH MAS SIMILAR A LO TEMES BLAH BLAH BLAH TU YA SABES)
 
 ```
 sfx("squeak");
@@ -186,17 +186,17 @@ bb({body:"squeeze"});
 
 `hong({mouth:"0_neutral", eyes:"0_annoyed"})`
 
-h: Oh good, my wolf's back. Faaaaantastic.
+h: Oh bien, my lobo esta de vuelta. Faaaaantastico
 
 `hong({eyes:"0_neutral"})`
 
-n: YOUR JOB IS TO PROTECT YOUR HUMAN FROM *DANGER*
+n: TU TRABAJO ES PROTEJER A TU HUMANO DEL *PELIGRO*
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
-n: IN FACT, THAT SANDWICH IS PUTTING THEM IN *DANGER* RIGHT NOW
+n: DE HECHO, ESE SANDWICH LO ESTA PONIENDO EN *PELIGRO* AHORA MISMO
 
-n: QUICK, WARN THEM!
+n: RAPIDO, ADVIERTELE!
 
 ```
 sfx("squeak");
@@ -204,17 +204,17 @@ bb({body:"squeeze_talk"});
 hong({body:"0_squeeze"});
 ```
 
-b: Human! Listen, we're in danger! The danger is...
+b: Humano! Escucha, estamos en peligro! El peligro es...
 
 `bb({body:"squeeze"})`
 
-n4: (LET _YOUR_ ANXIETY COME OUT TO PLAY! PICK WHAT'S MOST SIMILAR TO WHAT _YOUR_ FEAR TELLS YOU)
+n4: (DEJA_TU_ANSIEDAD_SALIR A JUGAR! ESCOGE LO MAS SIMILAR A LO QUE_TUS_MIEDOS TE DICEN)
 
 (#act1_normal_choice)
 
 # act1_normal_choice
 
-[We're eating alone for lunch! Again!](#act1a_alone) `bb({body:"squeeze_talk"})`
+(#act1a_alone)`bb({body:"squeeze_talk"})
 
 [We're not productive while eating!](#act1a_productive) `bb({body:"squeeze_talk"})`
 
